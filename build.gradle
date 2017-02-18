@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+dependencies {
+	mavenCentral()
+}
+
+repositories {
+	
+}
