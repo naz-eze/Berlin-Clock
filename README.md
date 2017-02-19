@@ -10,12 +10,13 @@ The time is calculated by adding the lit rectangular lamps.
 
 The top lamp is a pump which is blinking on/off every two seconds. 
 
-In the topmost line of red lamps every lamp represents 5 hours. 
+In the topmost line there are **4** red lamps, and every lamp represents 5 hours. 
 
-In the second line of red lamps every lamp represents 1 hour. 
-
-In the third line with tall lamps every lamp represents 5 minutes. There are 11 lamps, the 3rd, 6th, and 9th are red indicating the first quarter, half, and the last quarter of the hour. 
-
-In the last line with yellow lamps every lamp represents 1 minute.
+In the second line there are **4** red lamps, and every lamp represents 1 hour. 
 
 So if in the first line 2 lamps are lit and in the second line 3 lamps its 5+5+3=13h or 1 p.m. 
+
+In the third line with tall lamps every lamp represents 5 minutes. There are **11** lamps, the 3rd, 6th, and 9th are red indicating the first quarter, half, and the last quarter of the hour. 
+
+In the last line there are **4** yellow lamps, and every lamp represents 1 minute.
+
