@@ -4,6 +4,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+/**
+ * This class contains functionality to create a Time object from a String representation
+ * @author Naz
+ */
 public class Time {
 		
 	private int hour;
@@ -12,18 +16,36 @@ public class Time {
 	
 	private Time() { }
 
+	/**
+	 * Returns the hour value
+	 * @return the hour value
+	 */
 	public int getHour() {
 		return hour;
 	}
 
+	/**
+	 * Returns the minutes value
+	 * @return the minutes value
+	 */
 	public int getMinutes() {
 		return minutes;
 	}
 
+	/**
+	 * Returns the seconds value
+	 * @return the seconds value
+	 */
 	public int getSeconds() {
 		return seconds;
 	}
 	
+	/**
+	 * Parses the time from string format and returns it as a Time object
+	 * @param timeString time in String format
+	 * @return time object
+	 * @throws IllegalArgumentException when an invalid time is supplied
+	 */
 	public static Time parseTime(String timeString) {
 		Time time = new Time();
 		String timePattern = "HH:mm:ss";
