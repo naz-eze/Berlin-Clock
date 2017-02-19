@@ -24,7 +24,7 @@ For colour representation in this application, assume the following:
 ####Requirements needed to build and run the application
 
 * You will need at least JDK 1.8. This can be found on [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
-* Please ensure your JAVA_HOME environment variable is set your JDK1.8 download directory.
+* Please ensure your JAVA_HOME environment variable is set to your JDK 1.8 download directory.
 
 --------------------------------------------------------------------------------
 
@@ -65,13 +65,12 @@ For colour representation in this application, assume the following:
 	- lib/
         
 * Run the program
-
-		The time should be entered in this format: 'HH:mm:ss'
 		
 		For *nix OS run the command - bin/ExpediaCodeTest '24H_TIME'
 		For Windows OS run the command - bin\ExpediaCodeTest.bat '24H_TIME'
 		
-		Example run - ./bin/ExpediaCodeTest '14:35:49'
+		The 24H_TIME should be entered in this format: 'HH:mm:ss'
+		Example - bin/ExpediaCodeTest '14:35:49'
 
 --------------------------------------------------------------------------------
 
