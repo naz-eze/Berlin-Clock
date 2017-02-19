@@ -2,10 +2,16 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 
-dependencies {
+repositories {
 	mavenCentral()
 }
 
-repositories {
+dependencies {
+	
+	// https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all
+	compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.1'
+	
+	// https://mvnrepository.com/artifact/org.spockframework/spock-core
+	testCompile group: 'org.spockframework', name: 'spock-core', version: '1.0-groovy-2.4'
 	
 }
