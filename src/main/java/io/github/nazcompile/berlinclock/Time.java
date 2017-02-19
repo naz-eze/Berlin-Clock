@@ -3,7 +3,6 @@ package io.github.nazcompile.berlinclock;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class Time {
 		
@@ -31,11 +30,9 @@ public class Time {
 		SimpleDateFormat sdf = new SimpleDateFormat(timePattern);
 		sdf.setLenient(false); 
 		
-		try {
-			Date date = sdf.parse(timeString);
-			
+		try {			
 			Calendar calendar = Calendar.getInstance();
-			calendar.setTime(date);
+			calendar.setTime(sdf.parse(timeString));
 			
 			time.hour = calendar.get(Calendar.HOUR_OF_DAY);
 			time.minutes = calendar.get(Calendar.MINUTE);
