@@ -17,7 +17,7 @@ public class BerlinClock {
 		this.time = time;
 	}
 	
-	private String getSecondsLamp() {
+	private String secondsLine() {
 		return (time.getSeconds() % 2 == 0) ? Lamp.YELLOW : Lamp.OFF;
 	}
 	
@@ -56,9 +56,9 @@ public class BerlinClock {
 		return result;
 	}
 	
-	public String convert() {
-		StringBuilder result = new StringBuilder();
-		result.append("      " + getSecondsLamp()    + "\n");
+	public String draw() {
+		StringBuilder result = new StringBuilder();	
+		result.append("      " + secondsLine()    + "\n");
 		result.append("    "   + topLineHour()       + "\n");
 		result.append("    "   + bottomLineHour()    + "\n");
 		result.append(" " 	  + topLineMinutes()     + "\n");

@@ -11,15 +11,15 @@ class BerlinClockSpec extends Specification {
 			def berlinClock = new BerlinClock(time)
 			
 		when:
-			def result = berlinClock.getSecondsLamp()
+			def result = berlinClock.secondsLine()
 		then:
 			expected == result
 		where:
 			seconds		|	expected
-			22			|	Lamp.YELLOW
-			23			|	Lamp.OFF
-			54			|	Lamp.YELLOW
-			17			|	Lamp.OFF		
+			22			|	'Y'
+			23			|	'O'
+			54			|	'Y'
+			17			|	'O'		
 	}
 	
 	def "Should return correct lamp representation for hours on the top hour line"() {
@@ -94,11 +94,11 @@ class BerlinClockSpec extends Specification {
 			15			|	'OOOO'
 	}
 	
-	def "Should correctly convert time to berlin clock representation"() {
+	def "Should be able to draw a correct berlin clock representation of a given time"() {
 		given:
 			def berlinClock = new BerlinClock(Time.parseTime('13:32:54'))
 		when:
-			def result = berlinClock.convert();
+			def result = berlinClock.draw();
 		then:
 			result == expected
 		where:
