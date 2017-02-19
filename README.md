@@ -75,7 +75,7 @@ For colour representation in this application, assume the following:
 --------------------------------------------------------------------------------
 
 ####Generated Documents
-This documents will be generated as part of the build process
+These documents will be generated as part of the build process
 
 * Java Documentation - 'Project_Folder'/build/docs/javadoc/index.html
 
