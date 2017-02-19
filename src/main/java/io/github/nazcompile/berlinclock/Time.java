@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
- * This class contains functionality to create a Time object from a String representation
+ * This class contains functionality to parse and retrieve time information
  * @author Naz
  */
 public class Time {
@@ -43,7 +43,7 @@ public class Time {
 	/**
 	 * Parses the time from string format and returns it as a Time object
 	 * @param timeString time in String format
-	 * @return time object
+	 * @return time object containing parsed time information
 	 * @throws IllegalArgumentException when an invalid time is supplied
 	 */
 	public static Time parseTime(String timeString) {

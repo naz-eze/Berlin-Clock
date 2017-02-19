@@ -7,8 +7,19 @@ package io.github.nazcompile.berlinclock;
  */
 public class Lamp {
 	
+	/**
+	 * Represents Off lamps
+	 */
 	public final static String OFF = "O";
+	
+	/**
+	 * Represents Red On lamps
+	 */
 	public final static String RED = "R";
+	
+	/**
+	 * Represents Yellow On lamps
+	 */
 	public final static String YELLOW = "Y";
 
 }

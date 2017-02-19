@@ -17,9 +17,6 @@ public class BerlinClock {
 	private static final int TOP_MINS_LAMP_COUNT = 11;
 	private static final int BOTTOM_MINS_LAMP_COUNT = 4;
 
-	/**
-	 * @param time
-	 */
 	public BerlinClock(Time time) {
 		this.time = time;
 	}
@@ -79,7 +76,7 @@ public class BerlinClock {
 	 * @param lampColour The colour of the lamps in a given line
 	 * @return String containing lamp representation for a given line
 	 */
-	String createLampRepresentaion(int litLamps, int totalLamps, String lampColour) {
+	private String createLampRepresentaion(int litLamps, int totalLamps, String lampColour) {
 		String result;
 		int unlitLamps = totalLamps - litLamps;
 		
