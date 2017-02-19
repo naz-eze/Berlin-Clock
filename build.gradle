@@ -27,6 +27,8 @@ dependencies {
 	
 }
 
+build.dependsOn javadoc
+
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.10'
 }
