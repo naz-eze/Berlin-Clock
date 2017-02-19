@@ -58,4 +58,55 @@ class BerlinClockSpec extends Specification {
 			15			|	'OOOO'
 	}
 	
+	def "Should return correct lamp representation for minutes on the top minutes line"() {
+		given:
+			Time time = new Time()
+			time.minutes = minutes
+			def berlinClock = new BerlinClock(time)
+			
+		when:
+			def result = berlinClock.topLineMinutes()
+		then:
+			expected == result
+		where:
+			minutes		|	expected
+			30			|	'YYRYYROOOOO'
+			54			|	'YYRYYRYYRYO'
+			23			|	'YYRYOOOOOOO'
+			15			|	'YYROOOOOOOO'
+	}
+	
+	def "Should return correct lamp representation for minutes on the bottom minutes line"() {
+		given:
+			Time time = new Time()
+			time.minutes = minutes
+			def berlinClock = new BerlinClock(time)
+			
+		when:
+			def result = berlinClock.bottomLineMinutes()
+		then:
+			expected == result
+		where:
+			minutes		|	expected
+			30			|	'OOOO'
+			54			|	'YYYY'
+			23			|	'YYYO'
+			15			|	'OOOO'
+	}
+	
+	def "Should correctly convert time to berlin clock representation"() {
+		given:
+			def berlinClock = new BerlinClock(Time.parseTime('13:32:54'))
+		when:
+			def result = berlinClock.convert();
+		then:
+			result == expected
+		where:
+			expected =  "      Y\n" +
+						"    RROO\n" +
+						"    RRRO\n" +
+						" YYRYYROOOOO\n" +
+						"    YYOO"
+	}
+	
 }
