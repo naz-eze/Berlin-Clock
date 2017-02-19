@@ -2,7 +2,7 @@ package io.github.nazcompile.berlinclock
 
 import spock.lang.Specification
 
-class MainSpec extends Specification {
+class ApplicationSpec extends Specification {
 	
 	def cleanupSpec() {
 		System.setOut(null)
@@ -10,7 +10,7 @@ class MainSpec extends Specification {
 	
 	def "Should throw exception if an invalid number of arguments is used"() {
 		when:
-			Main.validateArgs(args)
+			Application.validateArgs(args)
 		then:
 			thrown IllegalArgumentException
 		where:
@@ -23,7 +23,7 @@ class MainSpec extends Specification {
 			System.setOut(new PrintStream(outStream))
 			String[] args = ['7:11:13']
 		when:
-			Main.main(args)
+			Application.main(args)
 		then:
 			expected == outStream.toString()
 		where:
