@@ -1,22 +1,19 @@
 #Berlin Clock Implementation
 
-####Requirement
-1. Implement the Berlin Clock as a function of the three parameters : hours (24-based), minutes, seconds and return a multi-line string. 
-2. Find a reasonable representation for the colors and states. 
-3. Provide instructions on how to run it.
-
-####Description
+Implement the Berlin Clock as a function of the three parameters : hours (24-based), minutes, seconds and return a multi-line string. 
 The time is calculated by adding the lit rectangular lamps. 
 
-The top lamp is a pump which is blinking on/off every two seconds. 
+####Description
 
-In the topmost line there are **4** red lamps, and every lamp represents 5 hours. 
+* The first line consist of **1** yellow circular lamp that blinks on/off every two seconds. 
+* The next line consist of **4** red rectangular lamps, and every lamp represents 5 hours.
+* The next line consist of **4** red rectangular lamps, and every lamp represents 1 hour.
+* The next line consist of **11** rectangular lamps, and every lamp represents 5 minutes. The 3rd, 6th, and 9th are red indicating the first quarter, half, and the last quarter of the hour, while the rest are yellow. 
+* The last line consist of **4** yellow lamps, and every lamp represents 1 minute.
 
-In the second line there are **4** red lamps, and every lamp represents 1 hour. 
+For colour representation in this application, assume the following:
+* Yellow Lamps are represented by **'Y'** when **On** 
+* Red Lamps are represented by **'R'** when **On** 
+* Both Yellow and Red Lamps are represented by **'O'** when **Off** 
 
-So if in the first line 2 lamps are lit and in the second line 3 lamps its 5+5+3=13h or 1 p.m. 
-
-In the third line with tall lamps every lamp represents 5 minutes. There are **11** lamps, the 3rd, 6th, and 9th are red indicating the first quarter, half, and the last quarter of the hour. 
-
-In the last line there are **4** yellow lamps, and every lamp represents 1 minute.
-
+####How to Run
