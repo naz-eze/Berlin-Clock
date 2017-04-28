@@ -3,11 +3,6 @@ Berlin Clock Implementation
 
 Implement the Berlin Clock as a function of the three parameters : hours (24-based), minutes, seconds and return a multi-line string. 
 The time is calculated by adding the lit rectangular lamps. 
-
------------------------------------------------------------------------
-
-####Description
-
 * The first line consist of **1** yellow circular lamp that blinks on/off every two seconds. 
 * The next line consist of **4** red rectangular lamps, and every lamp represents 5 hours.
 * The next line consist of **4** red rectangular lamps, and every lamp represents 1 hour.
@@ -19,66 +14,50 @@ For colour representation in this application, assume the following:
 * Red Lamps are represented by **'R'** when **On** 
 * Both Yellow and Red Lamps are represented by **'O'** when **Off** 
 
------------------------------------------------------------------------
+# Prerequisites
+--
+* JDK 8 and JAVA_HOME environment variable set 
 
-####Requirements needed to build and run the application
+# Building the project
+--
+Clone the repository:
+> git clone https://github.com/nazcompile/Berlin-Clock
 
-* You will need at least JDK 1.8. This can be found on [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
-* Please ensure your JAVA_HOME environment variable is set to your JDK 1.8 download directory.
+Navigate to the newly created folder:
+> cd Berlin-Clock
 
---------------------------------------------------------------------------------
+Run the project:
+> * For *nix OS run the command - ./gradlew clean build
+> * For Windows OS run the command - gradlew.bat clean build
 
-####How To Build
-
-* Open a Terminal window or Command Prompt window
-
-* Change Directory to 'Project_Folder'.
-
->	This should contain 
-		- .project
-	    - build.gradle	
-        - gradle/
-        - gradlew.sh
-        - gradlew.bat
-        - README.md
-        - src/
-        
-*  For *nix OS run the command - ./gradlew clean build
-   For Windows OS run the command - gradlew.bat clean build
-   
-> This might take a few minutes the first time it runs as it needs to download the dependencies it needs 		to 	build the code. The dependencies can be found in the build.gradle file inside dependencies { }
+> This might take a few minutes the first time it runs as it needs to download the dependencies it needs to build the code. The dependencies can be found in the build.gradle file inside dependencies { }
 		
-* A new 'build' directory is created in 'Project_Folder' containing all the build output
-
---------------------------------------------------------------------------------
-
-####How To Run
-
-* Change directory to the newly created 'Project_Folder'/build/distributions 
+# Running the application
+--
+* Change directory to the newly created Berlin-Clock/build/distributions 
 
 * Unpack any of the ExpediaCodeTest-1.0.zip or ExpediaCodeTest-1.0.tar files
 
-* Change directory to the unpacked directory ('Project_Folder'/build/distributions/ExpediaCodeTest-1.0)
+* Change directory to the unpacked directory (Berlin-Clock/build/distributions/ExpediaCodeTest-1.0)
 
 > This should contain 	
 	- bin/ 
 	- lib/
         
 * Run the program
-		
-		For *nix OS run the command - bin/ExpediaCodeTest '24H_TIME'
-		For Windows OS run the command - bin\ExpediaCodeTest.bat '24H_TIME'
+> For *nix OS run the command - bin/ExpediaCodeTest '24H_TIME'
+> For Windows OS run the command - bin\ExpediaCodeTest.bat '24H_TIME'
 		
 		The 24H_TIME should be entered in this format: 'HH:mm:ss'
 		Example - bin/ExpediaCodeTest '14:35:49'
 
---------------------------------------------------------------------------------
 
-####Generated Documents
+# Generated Documents
+--
 These documents will be generated as part of the build process
 
-* Java Documentation - 'Project_Folder'/build/docs/javadoc/index.html
+* Java Documentation - Berlin-Clock/build/docs/javadoc/index.html
 
-* Unit Tests Code Coverage Report - 'Project_Folder'/build/reports/jacoco/test/html/index.html
+* Unit Tests Code Coverage Report - Berlin-Clock/build/reports/jacoco/test/html/index.html
 
-* Unit Tests Report - 'Project_Folder'/build/reports/tests/index.html
+* Unit Tests Report - Berlin-Clock/build/reports/tests/index.html
