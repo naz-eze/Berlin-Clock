@@ -16,10 +16,10 @@ class BerlinClockSpec extends Specification {
 			expected == result
 		where:
 			seconds		|	expected
-			22			|	'Y'
-			23			|	'O'
-			54			|	'Y'
-			17			|	'O'		
+			22		|	'Y'
+			23		|	'O'
+			54		|	'Y'
+			17		|	'O'		
 	}
 	
 	def "Should return correct lamp representation for hours on the top hour line"() {
@@ -34,10 +34,10 @@ class BerlinClockSpec extends Specification {
 			expected == result
 		where:
 			hour		|	expected
-			13			|	'RROO'
-			3			|	'OOOO'
-			21			|	'RRRR'
-			15			|	'RRRO'
+			13		|	'RROO'
+			3		|	'OOOO'
+			21		|	'RRRR'
+			15		|	'RRRO'
 	}
 	
 	def "Should return correct lamp representation for hours on the bottom hour line"() {
@@ -52,10 +52,10 @@ class BerlinClockSpec extends Specification {
 			expected == result
 		where:
 			hour		|	expected
-			13			|	'RRRO'
-			3			|	'RRRO'
-			21			|	'ROOO'
-			15			|	'OOOO'
+			13		|	'RRRO'
+			3		|	'RRRO'
+			21		|	'ROOO'
+			15		|	'OOOO'
 	}
 	
 	def "Should return correct lamp representation for minutes on the top minutes line"() {
@@ -70,10 +70,10 @@ class BerlinClockSpec extends Specification {
 			expected == result
 		where:
 			minutes		|	expected
-			30			|	'YYRYYROOOOO'
-			54			|	'YYRYYRYYRYO'
-			23			|	'YYRYOOOOOOO'
-			15			|	'YYROOOOOOOO'
+			30		|	'YYRYYROOOOO'
+			54		|	'YYRYYRYYRYO'
+			23		|	'YYRYOOOOOOO'
+			15		|	'YYROOOOOOOO'
 	}
 	
 	def "Should return correct lamp representation for minutes on the bottom minutes line"() {
@@ -88,10 +88,10 @@ class BerlinClockSpec extends Specification {
 			expected == result
 		where:
 			minutes		|	expected
-			30			|	'OOOO'
-			54			|	'YYYY'
-			23			|	'YYYO'
-			15			|	'OOOO'
+			30		|	'OOOO'
+			54		|	'YYYY'
+			23		|	'YYYO'
+			15		|	'OOOO'
 	}
 	
 	def "Should be able to draw a correct berlin clock representation of a given time"() {
@@ -102,11 +102,11 @@ class BerlinClockSpec extends Specification {
 		then:
 			result == expected
 		where:
-			expected =  "      Y\n" +
-						"    RROO\n" +
-						"    RRRO\n" +
-						" YYRYYROOOOO\n" +
-						"    YYOO"
+			expected =  	"      Y\n" +
+					"    RROO\n" +
+					"    RRRO\n" +
+					" YYRYYROOOOO\n" +
+					"    YYOO"
 	}
 	
 }
