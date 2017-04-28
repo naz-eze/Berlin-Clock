@@ -15,10 +15,10 @@ class TimeSpec extends Specification {
 			
 		where:
 			timeValue	|	expectedHour	|	expectedMins	|	expectedSecs
-			'13:27:45'	|		13			|		27			|		45
-			'02:15:36'	|		2			|		15			|		36
-			'23:30:03'	|		23			|		30			|		3
-			'00:00:14'	|		0			|		0			|		14
+			'13:27:45'	|		13	|		27	|		45
+			'02:15:36'	|		2	|		15	|		36
+			'23:30:03'	|		23	|		30	|		3
+			'00:00:14'	|		0	|		0	|		14
 	}
 	
 	def "Should throw an Illegal argument exception if an invalid time is provided"() {
