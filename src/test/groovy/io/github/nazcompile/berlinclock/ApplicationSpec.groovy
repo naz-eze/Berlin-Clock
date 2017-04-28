@@ -27,11 +27,11 @@ class ApplicationSpec extends Specification {
 		then:
 			expected == outStream.toString()
 		where:
-			expected =  "      O\n" +
-						"    ROOO\n" +
-						"    RROO\n" +
-						" YYOOOOOOOOO\n" +
-						"    YOOO\n"
+			expected =  	"      O\n" +
+					"    ROOO\n" +
+					"    RROO\n" +
+					" YYOOOOOOOOO\n" +
+					"    YOOO\n"
 	}
 
 }
