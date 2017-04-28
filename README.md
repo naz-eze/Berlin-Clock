@@ -44,8 +44,8 @@ Run the project:
 >	- lib/
         
 * Run the program
-> For *nix OS run the command - bin/Berlin-Clock '24H_TIME'
-> For Windows OS run the command - bin\Berlin-Clock.bat '24H_TIME'
+> * For *nix OS run the command - bin/Berlin-Clock '24H_TIME'
+> * For Windows OS run the command - bin\Berlin-Clock.bat '24H_TIME'
 
 > The 24H_TIME should be entered in this format: 'HH:mm:ss' 
 > Example - bin/Berlin-Clock '14:35:49'
