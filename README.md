@@ -15,11 +15,11 @@ For colour representation in this application, assume the following:
 * Both Yellow and Red Lamps are represented by **'O'** when **Off** 
 
 # Prerequisites
---
+
 * JDK 8 and JAVA_HOME environment variable set 
 
 # Building the project
---
+
 Clone the repository:
 > git clone https://github.com/nazcompile/Berlin-Clock
 
@@ -33,27 +33,26 @@ Run the project:
 > This might take a few minutes the first time it runs as it needs to download the dependencies it needs to build the code. The dependencies can be found in the build.gradle file inside dependencies { }
 		
 # Running the application
---
+
 * Change directory to the newly created Berlin-Clock/build/distributions 
 
-* Unpack any of the ExpediaCodeTest-1.0.zip or ExpediaCodeTest-1.0.tar files
+* Unpack any of the Berlin-Clock-1.0.zip or Berlin-Clock-1.0.tar files
 
-* Change directory to the unpacked directory (Berlin-Clock/build/distributions/ExpediaCodeTest-1.0)
-
+* Change directory to the unpacked directory (Berlin-Clock/build/distributions/Berlin-Clock-1.0)
 > This should contain 	
-	- bin/ 
-	- lib/
+> 	- bin/ 
+>	- lib/
         
 * Run the program
-> For *nix OS run the command - bin/ExpediaCodeTest '24H_TIME'
-> For Windows OS run the command - bin\ExpediaCodeTest.bat '24H_TIME'
-		
-		The 24H_TIME should be entered in this format: 'HH:mm:ss'
-		Example - bin/ExpediaCodeTest '14:35:49'
+> For *nix OS run the command - bin/Berlin-Clock '24H_TIME'
+> For Windows OS run the command - bin\Berlin-Clock.bat '24H_TIME'
+
+> The 24H_TIME should be entered in this format: 'HH:mm:ss' 
+> Example - bin/Berlin-Clock '14:35:49'
 
 
 # Generated Documents
---
+
 These documents will be generated as part of the build process
 
 * Java Documentation - Berlin-Clock/build/docs/javadoc/index.html
